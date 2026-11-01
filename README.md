@@ -24,18 +24,12 @@ The design is simulated in **AMD Vivado 2026.1** and implemented on the **Digile
 
 ## 📂 Repository Structure
 ```text
-├── RTL/
+
 │   ├── traffic_light_top.v           
 │   ├── timer_counter.v               
 │   ├── moore_traffic_controller.v    
 │   └── mealy_traffic_controller.v    
-├── Simulation/
-│   ├── top_tb.v                      
-│   ├── moore_tb.v                    
-│   └── mealy_tb.v                    
-├── Constraints/
-│   └── traffic_light.xdc             
-└── Docs/   
+
 
 
 📊 Results & Comparison
@@ -57,7 +51,6 @@ Mealy Timing: A_yellow rises in the same cycle as timer_done.
 
 Safety: A_green && B_green == 0 at all times.
 
-https://docs/simulation_waveform.png
 
 3. FPGA Implementation
 Power: Total on-chip power = 0.05 W (0.012 W dynamic, 0.038 W static).
@@ -66,13 +59,10 @@ Timing: All constraints met. WNS = +6.315 ns, WHS = +0.221 ns, TNS = 0.000 ns.
 
 Device Layout: Placed optimally on the Spartan-7 fabric.
 
-https://docs/device_layout.png
-https://docs/power_report.png
 
 4. Hardware Output
 The design was programmed onto the Arty S7-25 board. The mode_sel switch successfully toggles between Moore and Mealy behavior in real-time.
 
-https://docs/hardware_output.jpg
 
 🚀 Future Scope
 Extend to four-way intersections with left-turn arrows.
