@@ -22,15 +22,6 @@ The design is simulated in **AMD Vivado 2026.1** and implemented on the **Digile
 *   **Target Board:** Digilent Arty S7-25 (Spartan-7 XC7S25CSGA324-1)
 *   **Hardware Verification:** On-board LEDs (LD2-LD5) and switches (SW0-SW3) for real-time observation.
 
-## 📂 Repository Structure
-```text
-
-│   ├── traffic_light_top.v           
-│   ├── timer_counter.v               
-│   ├── moore_traffic_controller.v    
-│   └── mealy_traffic_controller.v    
-
-
 
 📊 Results & Comparison
 1. Moore vs. Mealy Trade-off
@@ -79,6 +70,15 @@ Formal verification (SymbiYosys/JasperGold) to mathematically prove safety invar
 M. Suresh (Roll No: 2411EC010111)
 
 P. Sandeep (Roll No: 2411EC010114)
+
+
+## 📂 Repository Structure
+```text
+
+│   ├── traffic_light_top.v           
+│   ├── timer_counter.v               
+│   ├── moore_traffic_controller.v    
+│   └── mealy_traffic_controller.v 
 
 Department of Electronics and Communication Engineering
 School of Engineering, Malla Reddy University, Hyderabad, Telangana, India
