@@ -80,6 +80,8 @@ M. Suresh (Roll No: 2411EC010111)
 
 P. Sandeep (Roll No: 2411EC010114)
 
+Project Guide: Mr.A.Mohan (Assistant Professor)
+
 
 ## 📂 Repository Structure
 ```text
@@ -92,4 +94,3 @@ P. Sandeep (Roll No: 2411EC010114)
 Department of Electronics and Communication Engineering
 School of Engineering, Malla Reddy University, Hyderabad, Telangana, India
 
-Project Guide: Mrs. C. Sheeba Thangapushpam (Assistant Professor)
