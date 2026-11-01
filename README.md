@@ -24,14 +24,19 @@ The design is simulated in **AMD Vivado 2026.1** and implemented on the **Digile
 
 
 📊 Results & Comparison
+
 1. Moore vs. Mealy Trade-off
+
 Metric	Moore FSM	Mealy FSM	Winner
 States	4	2	Mealy
 Flip-Flops	4	1	Mealy (75% reduction)
 LUTs	2	3	Moore (33% reduction)
 Yellow Latency	1 clock cycle	0 clock cycles	Mealy
 Glitch Risk	None (Registered)	Higher (Combinational)	Moore
+
+
 2. Simulation Result
+
 The testbench verifies:
 
 Reset: FSM enters safe A_GREEN state.
@@ -44,6 +49,8 @@ Safety: A_green && B_green == 0 at all times.
 
 
 3. FPGA Implementation
+
+
 Power: Total on-chip power = 0.05 W (0.012 W dynamic, 0.038 W static).
 
 Timing: All constraints met. WNS = +6.315 ns, WHS = +0.221 ns, TNS = 0.000 ns.
@@ -56,6 +63,7 @@ The design was programmed onto the Arty S7-25 board. The mode_sel switch success
 
 
 🚀 Future Scope
+
 Extend to four-way intersections with left-turn arrows.
 
 Implement pedestrian crossing request buttons (natural Mealy input).
@@ -67,6 +75,7 @@ Integrate night mode (blinking yellow) and emergency vehicle override.
 Formal verification (SymbiYosys/JasperGold) to mathematically prove safety invariants.
 
 👨‍💻 Authors
+
 M. Suresh (Roll No: 2411EC010111)
 
 P. Sandeep (Roll No: 2411EC010114)
